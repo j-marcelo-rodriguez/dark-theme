@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <title>Quiero inscribirme</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="btn-container">
+            <input type="button" value="Tema claro" id="light-theme">
+            <input type="button" value="Tema oscuro" id="dark-theme">
+        </div>
+        <div class="logo-container">
+            <img class="logo-container__image" id="dark-light" src="img/LogoDark.png" alt="logo">
+        </div>
+        <form class="search-bar">
+            <label class="search-bar__label" for="busqueda">Buscar</label>
+            <input class="search-bar__search" id="busqueda" type="search">
+            <input class="search-bar__submit" type="submit" value="Ir">
+        </form>
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="Galeria.html">
+                        Galería
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="Quiero-inscribirme.html">
+                        Quiero Inscribirme
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="Quienes-somos.html">
+                        Quienes somos
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="form-suscribe">
+        <h1 class="form-suscribe__tittle">Ingresa tus datos</h1>
+        <div class="form-container">
+            <div class="form-container__name">
+                <label class="form-container__name-label" for="nombre">Nombre:*</label>
+                <input class="form-container__name-input" type="text" name="nombre" id="nombre" minlength="10" maxlength="30" required>
+            </div>
+            <div class="form-container__last">
+                <label class="form-container__last-label" for="apellido">Apellido:*</label>
+                <input class="form-container__last-input" type="text" name="apellido" id="apellido" minlength="10" maxlength="30" required>
+            </div>
+            <div class="form-container__phone">
+                <label class="form-container__phone-label" for="telefono">Teléfono:*</label>
+                <input class="form-container__phone-input" type="number" id="telefono">
+            </div>  
+            <div class="form-container__mail">
+                <label class="form-container__mail-label" for="mail">Tu mail:*</label>
+                <input class="form-container__mail-input" type="email" id="mail" placeholder="Ej: proyectox@mail.com" required>
+            </div>   
+            <div class="form-container__comment"> 
+                <label class="form-container__comment-label" for="comentarios">Comentarios</label>
+                <textarea class="form-container__comment-text" name="comentarios" id="comentarios"></textarea>
+            </div>
+            <div class="form-container__validate">
+                <input class="form-container__validate-submit" type="submit" value="Enviar">
+                <input class="form-container__validate-reset" type="reset" value="Resetear">
+            </div>
+        </div>
+    </form>
+
+    <footer class="main-footer">
+
+        <a class="main-footer__mail" href="mailto:proyectox@mail.com" target="_blank">proyectox@mail.com</a>
+        <a class="main-footer__phone" href="tel:+5491199998888" target="_blank">Llamanos</a>
+        <a class="main-footer__us" href="Quienes-somos.html"> Quienes Somos </a>
+        <p class="main-footer__signature">&#169; 2021 ProyectoX. Todos los derechos reservados.</p>
+        <img class="main-footer__image" src="img/camera.png" alt="imagen-camara">
+
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
